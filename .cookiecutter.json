@@ -1,0 +1,22 @@
+{
+    "_template": "gh:rnwolf/poetry_typer",
+    "cli_name": "klickbrick",
+    "default_branch": "main",
+    "development_status": "Development Status :: 1 - Planning",
+    "email": "Rudiger.Wolf@ThroughputFocus.com",
+    "friendly_name": "Klickbrick",
+    "full_name": "Rudiger Wolf",
+    "github_username": "rnwolf",
+    "key_words": "'Keyword1', 'keyword2'",
+    "license": "MIT",
+    "package_name": "klickbrick",
+    "project_name": "klickbrick",
+    "project_short_description": "Sample project generated from Rudi's Python Template.",
+    "python_major_version": "3",
+    "python_matrix": "'3.9','3.10' Specify which versions of python to run tests with.",
+    "python_minor_version": "10",
+    "python_version": "3.10",
+    "repo_name": "klickbrick",
+    "version": "0.0.0",
+    "year_to": "2021"
+}

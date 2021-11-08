@@ -1,0 +1,94 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.masonry.api"
+
+
+[tool.nitpick]
+style = "https://raw.githubusercontent.com/wemake-services/wemake-python-styleguide/master/styles/nitpick-style-wemake.toml"
+
+
+[tool.poetry]
+name = "klickbrick"
+version = "0.0.0"
+description = "Sample project generated from Rudi's Python Template."
+license = "MIT"
+authors = ["Rudiger Wolf <Rudiger.Wolf@ThroughputFocus.com>"]
+readme = "README.md"
+repository = "https://github.com/rnwolf/klickbrick"
+homepage = "https://rnwolf.github.io/klickbrick/"
+keywords = ['Keyword1', 'keyword2']
+classifiers = [
+  "Development Status :: 1 - Planning",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+
+[tool.poetry.scripts]
+klickbrick = "klickbrick.klickbrick:app"
+
+[tool.poetry.urls]
+Changelog = "https://github.com/rnwolf/klickbrick/releases"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "*"}
+
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+coverage = {extras = ["toml"], version = "^6.1"}
+safety = "^1.10.3"
+mypy = "^0.910"
+typeguard = "^2.13.0"
+interrogate = "*"
+pip-tools = "*"
+proclamation = "^1.0.2"
+typer-cli = "*"
+plantuml-markdown = "^3.2.2"
+
+flake8 = "*"
+flake8-pytest-style = "^1.1"
+flake8-docstrings = "*"
+flake8-bandit = "*"
+flake8-bugbear = "*"
+flake8-deprecated = "*"
+flake8-executable = "*"
+flake8-black = "*"
+nitpick = "^0.22"
+
+pytest-asyncio = "*"
+pytest-randomly = "^3.3"
+
+black = "^20.8b1"
+pre-commit = "*"
+pre-commit-hooks = "*"
+
+importlib_resources = "*"
+rope = "*"
+hypothesis = "*"
+httpie = "*"
+mkdocs = "^1.1"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["klickbrick"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
+
+[tool.mypy]
+strict = true
+warn_unreachable = true
+pretty = true
+show_column_numbers = true
+show_error_codes = true
+show_error_context = true
